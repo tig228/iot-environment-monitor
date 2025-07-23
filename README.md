@@ -22,13 +22,13 @@ The data is uploaded every 20 seconds to the cloud using **ThingSpeak**, where i
 ##  Wiring Diagram
 
 
-Step-by-Step Setup Guide
+## Step-by-Step Setup Guide
 
 This guide will walk you through setting up the Environmental Monitoring System using an Arduino UNO R4 WiFi, DHT11, and MQ135 sensors. The system uploads data to ThingSpeak and displays it in real-time charts.
 
 ---
 
-### 1. 🔌 Connect the Sensors
+### 1. Connect the Sensors
 
 Use the wiring diagram in this repo to connect your sensors to the Arduino UNO R4 WiFi:
 
@@ -39,7 +39,7 @@ Use the wiring diagram in this repo to connect your sensors to the Arduino UNO R
 | DATA      | D2                   |
 | GND       | GND                  |
 
-> ⚠️ If your module does not include a pull-up resistor, add a 10kΩ resistor between VCC and DATA.
+
 
 #### MQ135 (Air Quality Sensor)
 | MQ135 Pin | Arduino UNO R4 WiFi |
@@ -50,7 +50,7 @@ Use the wiring diagram in this repo to connect your sensors to the Arduino UNO R
 
 ---
 
-### 2. 💻 Upload the Arduino Sketch
+### 2. Upload the Arduino Sketch
 
 1. Open the `iot_monitoring.ino` file in the Arduino IDE
 2. Select **Arduino UNO R4 WiFi** under `Tools > Board`
@@ -60,7 +60,7 @@ Use the wiring diagram in this repo to connect your sensors to the Arduino UNO R
 
 ---
 
-### 3. 🔐 Configure Wi-Fi & ThingSpeak
+### 3. Configure Wi-Fi & ThingSpeak
 
 Edit the top of your `.ino` file and replace the placeholder values with your own credentials:
 
@@ -75,7 +75,7 @@ You can find your **Channel ID** and **Write API Key** in the **API Keys** tab o
 
 ---
 
-### 4. 📟 Open Serial Monitor
+### 4. Open Serial Monitor
 
 - Go to `Tools > Serial Monitor`
 - Set the baud rate to `115200`
@@ -94,7 +94,7 @@ Upload OK
 
 ---
 
-### 5. 🌐 View Your Data on ThingSpeak
+### 5. View Your Data on ThingSpeak
 
 Visit your live dashboard:  
 👉 [https://thingspeak.mathworks.com/channels/3008831](https://thingspeak.mathworks.com/channels/3008831)
@@ -107,13 +107,6 @@ Make sure your fields are labeled:
 The graphs update automatically every 20 seconds with real-time data.
 
 
-
-##  Setup Instructions
-1. Connect the sensors as shown in the wiring diagram.
-2. Upload the Arduino sketch using the Arduino IDE.
-3. Replace the placeholders in the code with your Wi-Fi and ThingSpeak credentials.
-4. Open the Serial Monitor to verify data is being sent.
-5. View your data on ThingSpeak.
 
 ##  Live Dashboard
 [View Real-Time Environmental Data on ThingSpeak] https://thingspeak.mathworks.com/channels/3008831 
